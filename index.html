@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.4.0/model-viewer.min.js"></script>
     <script src="app.js" defer></script>
 </head>
 <body>
   <header class = "header"> <!--cria divisorias para as variedades do site-->
-    <a href="#"><img src= "logo.png"></a> <!--logo do site-->
+    <a href="#"><img src= "logo.png" class="logo"></a> <!--logo do site-->
     <nav>
         <a href="#">figures</a>
+        <a href="#">|</a>
         <a href="#">chaveiros</a>
+        <a href="#">|</a>
         <a href="#">bottons</a>
     </nav>
 
@@ -24,7 +26,7 @@
 
   </header> 
   <main class= "container"> <!--pagina do produto-->
-    <section class="product"></section>  
+    <section class="product">  
       <div class= "product-visual">
         <model-viewer src="assets/genshin_impact_-_furina.glb" 
         class = "modelo"
@@ -32,7 +34,31 @@
         auto-rotate
         camera-controls>
         </model-viewer> <!--produto 3D-->
-    </div>
+      </div>
+      <div>
+      <div class="product-info">
+        <h1>Figures</h1>
+        <p class="product-description">Figures de personagens do jogo Genshin Impact, com detalhes realistas e bem feitos.</p>
+        <div class="price">R$ 120,00</div>
+        <div class="option-group">
+          <button
+          class="color"
+          data-variant="figure furina"></button>
+
+        </div>
+        <button
+          class="color"
+          data-variant="figure ningguang"></button>
+        <button
+          class="color"
+          data-variant="figure rosaria"></button>
+
+        <button class = "add-cart">Adicionar ao Carrinho</button>
+
+        
+      </div>
+      
+    </section>
   </main>
 </body>
 </html>

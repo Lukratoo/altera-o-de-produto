@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+
+}
+
+header{
+    height: 85px;
+    background-color: rgb(111, 173, 184);
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+.logo{
+    height: 80px;
+    width: 80px;
+}
+nav{
+    gap: 60px;
+    display: flex;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    transition: 0.3s;
+    
+}
+nav a:hover{
+    color: rgb(213, 232, 245);
+    
+
+    
+}
+
+.cart {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    height: 100px;
+    width: 100px;
+}
+.cart-count{
+    background-color: rgb(213, 232, 245);
+    color: rgb(0, 0, 0);
+    border-radius: 50%;
+    padding: 1px 3px;
+    margin-left: -15px;
+    
+
+
+}
